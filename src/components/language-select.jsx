@@ -1,5 +1,6 @@
 import { ArrowLeftRight } from "lucide-react";
 import Select from "react-select";
+import { customStyles } from "../utils/constants";
 
 const LanguageSelect = () => {
   const options = [
@@ -14,7 +15,11 @@ const LanguageSelect = () => {
         {/* kaynak dil */}
         <div className="flex-1 w-full">
           <label className="block text-sm text-zinc-300 mb-2">Kaynak Dil</label>
-          <Select options={options} className="text-sm text-black" />
+          <Select
+            options={options}
+            styles={customStyles}
+            className="text-sm text-black"
+          />
         </div>
 
         {/* değiştirme butonu */}
@@ -27,7 +32,11 @@ const LanguageSelect = () => {
         {/* hedef dil */}
         <div className="flex-1 w-full">
           <label className=" block text-sm text-zinc-300 mb-2">Hedef Dil</label>
-          <Select options={options} className="text-sm text-black" />
+          <Select
+            options={options}
+            styles={customStyles}
+            className="text-sm text-black"
+          />
         </div>
       </div>
 
