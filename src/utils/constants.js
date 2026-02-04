@@ -1,5 +1,3 @@
-import { SingleValue } from "react-select/animated";
-
 export const customStyles = {
   control: (styles, state) => ({
     ...styles,
@@ -9,7 +7,7 @@ export const customStyles = {
     borderRadius: "12px",
     minHeight: "48px",
     boxShadow: state.isFocused ? "0 0 0 1px #3b82f6" : "none",
-    "&hover": {
+    "&:hover": {
       borderColor: "#3b82f6",
     },
   }),
@@ -27,14 +25,14 @@ export const customStyles = {
   }),
 
   menu: (styles, state) => ({
-    ...state,
+    ...styles,
     background: "#3f3f46",
     border: "1px solid #52525b",
     borderRadius: "12px",
     boxShadow: "0 10px 25px rgba(0,0,0,0.3)",
   }),
 
-  SingleValue: (styles, state) => ({
+  singleValue: (styles, state) => ({
     ...styles,
     color: "#e4e4e7",
   }),

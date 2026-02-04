@@ -4,8 +4,13 @@ import TextContainer from "./components/text-container";
 import History from "./components/history";
 import LanguageSelect from "./components/language-select";
 import Button from "./components/button";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
 
 const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {});
   return (
     <div className="bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 min-h-screen text-white grid place-items-center">
       <div className="container mx-auto px-4 py-8">
